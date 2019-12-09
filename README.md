@@ -4,7 +4,7 @@ Team Pepe solution for Openvino hackathon: emotions and speaker recognition from
 ### Stage 0: Preapration
 To use your own voice in speaker recognition model, please record it with following command: 
 ```
-python3 voice_db/record_voice.py %filename%
+python3 voice_db/record_voice.py %filename%.wav
 ```
 Recording should last about 10-15 seconds of continuous speech. Press ``Ctrl+C`` to interrupt the recognition process.
 After that you should generate a spectrograms for all audio files. That could be done with:

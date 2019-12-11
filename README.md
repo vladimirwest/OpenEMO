@@ -6,7 +6,7 @@ To use your own voice in speaker recognition model, please record it with follow
 ```
 python3 voice_db/record_voice.py %filename%.wav
 ```
-Recording should last about 10-15 seconds of continuous speech. Press ``Ctrl+C`` to interrupt the recognition process.
+Recording should last about 10-15 seconds of continuous speech. Press ``Ctrl+C`` to interrupt the recording process.
 After that you should generate a spectrograms for all audio files. That could be done with:
 ```
 python3 create_base.py

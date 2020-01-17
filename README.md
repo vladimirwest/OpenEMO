@@ -19,3 +19,7 @@ python3 demo.py
 ```
 Note that speech sample should lasts about 10 seconds, otherwise it will not be recognized (due to speaker recognition model input_shape)
 It will output list with all emotions probabilities and cosine distances for all speech samples which were stored in voice_db folder. In our demo we used a threshold (=0.35) to identificate a speaker.
+
+### Used sources:
+Speaker recognition: https://github.com/linhdvu14/vggvox-speaker-identification  
+Emotions recognition: https://github.com/alexmuhr/Voice_Emotion

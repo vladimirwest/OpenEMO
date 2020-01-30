@@ -79,7 +79,7 @@ config = Config()
 
 srNet = cv.dnn.readNet('speaker_recognition_model.bin',
 		       'speaker_recognition_model.xml')
-srNet.setPreferableTarget(cv.dnn.DNN_TARGET_MYRIAD)
+#srNet.setPreferableTarget(cv.dnn.DNN_TARGET_MYRIAD)
 
 df = pd.DataFrame(columns = ['speaker', 'spec', 'embedding'])
 for file in glob.glob("voice_db/*.npy"):
@@ -97,7 +97,7 @@ print(df)
 
 emotionsNet = cv.dnn.readNet('emotions_model.bin',
                               'emotions_model.xml')
-emotionsNet.setPreferableTarget(cv.dnn.DNN_TARGET_MYRIAD)
+#emotionsNet.setPreferableTarget(cv.dnn.DNN_TARGET_MYRIAD)
 
 process = True
 #
@@ -237,7 +237,7 @@ def iterate():
         #frame['emotion_probability'] = np.squeeze(np.array(local_results)).tolist() #['{:.3f}'.format(x) for x in local_results]
         #frame['speaker_arr'] = list(df.speaker.values)
         #frame['speaker_probability'] = np.squeeze(dist_list).tolist() #['{:.3f}'.format(x) for x in dist_list]
-#        await sendPermanentData(frame)
+        #await sendPermanentData(frame)
 
 
 
